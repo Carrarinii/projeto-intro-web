@@ -5,69 +5,114 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TLOZ Games</title>
-    <script src="index.js"></script>
+    <title>Zeldiary</title>
+    <link rel="icon" href="./assets/TLOZ Games/Icons/Triforce icon.png">
+    <script src="index.js" defer></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@100;300;400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <div class="cabeca">
-            <img class="triforce" id="tri-left" src="./assets/triforce.gif" alt="triforce gif">
-            <h1>The Legend of Zelda Games</h1>
-            <img class="triforce" id="tri-right" src="./assets/triforce.gif" alt="triforce gif">
-        </div>
-    </header>
+    <div class="upperStructure">
+        <header>
 
-    <main>
-        <nav>
-            <label for="searchfield">Digite aqui:</label>
-            <input type="search" name="seach" id="searchfield" placeholder="Ocarina of...">
-            <button type="submit">Pesquisar</button>
-        </nav>
+            <div class="headerName">
+                <a class="headerName" href="./index.html">
+                    <img src="./assets/TLOZ Games/Displays/Main display 2.png" width="150rem" alt="">
+                    <h1>Zeldiary</h1>
+                </a>
+            </div>
 
-        <article>
+            <nav class="nav">
+                <!-- <label for="field">Pesquisar:</label> -->
+                <input type="search" id="field" placeholder="Pesquisar">
+                <button type="submit" style='font-size:20px;'>&#128269;</button>
+            </nav>
 
-            <section>
-                <img id="OOT" src="./assets/OoT logo.png" alt="The Legend of Zelda: Ocarina of Time logo">
-                <div class="game-info">
-                    <h2><a target="_blank"
-                            href="https://zeldapedia.wiki/wiki/The_Legend_of_Zelda:_Ocarina_of_Time">Ocarina
-                            of Time</a></h2>
+            <div class="pathCategories">
+
+
+                <img id="MGd" src="./assets/TLOZ Games/Displays/Items display white.png" width="20rem" alt="">
+                <a href="">Main Games</a>
+                <img id="SGd" src="./assets/TLOZ Games/Displays/Items display white.png" width="20rem" alt="">
+                <a href="">Sub Games</a>
+                <img id="TLd" src="./assets/TLOZ Games/Displays/Items display white.png" width="20rem" alt="">
+                <a href="">Timeline</a>
+                <img id="Bd" src="./assets/TLOZ Games/Displays/Items display white.png" width="20rem" alt="">
+                <a href="">Bosses</a>
+                <img id="Cd" src="./assets/TLOZ Games/Displays/Items display white.png" width="20rem" alt="">
+                <a href="">Characters</a>
+                <img id="Dd" src="./assets/TLOZ Games/Displays/Items display white.png" width="20rem" alt="">
+                <a href="">Dungeons</a>
+                <img id="Ed" src="./assets/TLOZ Games/Displays/Items display white.png" width="20rem" alt="">
+                <a href="">Enemies</a>
+                <img id="Id" src="./assets/TLOZ Games/Displays/Items display white.png" width="20rem" alt="">
+                <a href="">Items</a>
+                <img id="Ld" src="./assets/TLOZ Games/Displays/Items display white.png" width="20rem" alt="">
+                <a href="">Locations</a>
+            </div>
+
+        </header>
+
+        <main>
+            <div class="displayVideo">
+                <aside>
+                    <video autoplay muted loop id="backgroundVideo"
+                        src="./assets/TLOZ Games/Videos/TLOZ TOTK - Teaser -  (1080p60).mp4"></video>
+                    <div class="videoContent">
+                        <p id="newVideo" style="color: violet;"><b>new!</b></p>
+                        <h1>The Legend of Zelda: Tears of the Kingdom</h1>
+                        <p>2023</p>
+                        <p>Nintendo Switch</p>
+                    </div>
+                </aside>
+            </div>
+            <h1>MAIN GAMES</h1>
+            <article>
+                <section>
+                    <h2><a target="_blank" href="./oot.html">Ocarina of Time</a></h2>
+                    <img src="./assets/TLOZ Games/Polished Logos/OOT.png" width="90%"
+                        alt="The Legend of Zelda: Ocarina of Time logo">
                     <ul>
-                        <li> <b>Gênero:</b> Ação e Aventura, Fantasia, Quebra-cabeça</li>
-                        <li><b>Sinopse:</b> "Link é um jovem da floresta que vê seu lar em perigo e parte em uma jornada
-                            para
-                            deter
-                            um rei maligno e salvar o reino de Hyrule! Para completar sua missão, ele terá que encontrar
-                            a
+                        <li> <b>Gênero:</b>
+                            Ação e Aventura, Fantasia, Quebra-cabeça</li>
+                        <li><b>Sinopse:</b>
+                            "Link é um jovem da floresta que vê seu lar em perigo e parte em uma jornada para deter um
+                            rei maligno e salvar o reino de Hyrule! Para completar sua missão, ele terá que encontrar a
                             princesa Zelda e ajudar outros povos para conseguir reunir os pedaços da Triforce e
-                            restabelecer
-                            o equilíbrio do mundo!"</li>
-                        <li><b>Data de lançamento:</b> 1998</li>
-                        <li><b>Nota dos críticos:</b> 9.9</li>
-                        <li><b>Nota do público:</b> 9.1</li>
-                        <li><b>Plataformas:</b> N64, 3DS</li>
-                        <li><b>Tradução:</b> False</li>
-                        <li><b>Remaster/Remake:</b> True</li>
-                        <li><b>Sequência:</b> False</li>
+                            restabelecer o equilíbrio do mundo!"</li>
+                        <li><b>Data de lançamento:</b>
+                            1998</li>
+                        <li><b>Nota dos críticos:</b>
+                            9.9</li>
+                        <li><b>Nota do público:</b>
+                            9.1</li>
+                        <li><b>Plataformas:</b>
+                            N64, 3DS</li>
+                        <li><b>Tradução:</b>
+                            False</li>
+                        <li><b>Remaster/Remake:</b>
+                            True</li>
+                        <li><b>Sequência:</b>
+                            False</li>
                     </ul>
-                </div>
-            </section>
+                </section>
 
-            <section>
-                <img id="MM" src="./assets/MM logo.png" alt="The Legend of Zelda: Majora's Mask logo">
-                <div class="game-info">
+                <!-- <section>
                     <h2><a target="_blank"
                             href="https://zeldapedia.wiki/wiki/The_Legend_of_Zelda:_Majora%27s_Mask">Majora's
                             Mask</a></h2>
-
+                    <img src="./assets/TLOZ Games/Polished Logos/Logo padrao.png" alt="">
                     <ul>
                         <li><b>Gênero:</b> Fantasia, Quebra-cabeça</li>
                         <li><b>Sinopse:</b> "Jogado em um mundo paralelo, Link encontra uma terra em grave perigo. A
                             misteriosa
-                            Máscara de Majora causou estragos nos cidadãos da cidade de Termina, mas seu problema mais
-                            urgente é a lua caindo em direção ao mundo! Link tem apenas 3 dias, apenas 72 horas, para
+                            Máscara de Majora causou estragos nos cidadãos da cidade de Termina, mas seu problema
+                            mais
+                            urgente é a lua caindo em direção ao mundo! Link tem apenas 3 dias, apenas 72 horas,
+                            para
                             encontrar uma maneira de parar sua queda."</li>
                         <li><b>Data de lançamento:</b> 2000</li>
                         <li><b>Nota dos críticos:</b> 9.5</li>
@@ -77,20 +122,18 @@
                         <li><b>Remaster/Remake:</b> True</li>
                         <li><b>Sequência:</b> True</li>
                     </ul>
-                </div>
-            </section>
-
-            <section>
-                <img id="BOTW" src="./assets/BotW logo.png" alt="The Legend of Zelda: Breath of the Wild logo">
-                <div class="game-info">
+                </section> -->
+                <!-- <section>
                     <h2><a target="_blank"
-                            href="https://zeldapedia.wiki/wiki/The_Legend_of_Zelda:_Breath_of_the_Wild">Breath of the
+                            href="https://zeldapedia.wiki/wiki/The_Legend_of_Zelda:_Breath_of_the_Wild">Breath of
+                            the
                             Wild</a></h2>
                     <ul>
                         <li><b>Gênero:</b> Ação e Aventura, Mundo Aberto, RPG</li>
                         <li><b>Sinopse:</b> "A história começa com Link, que ao acordar, se encontra perdido em uma
                             Hyrule
-                            devastada. Após cem anos de sono, Link precisa partir em uma aventura para recuperar suas
+                            devastada. Após cem anos de sono, Link precisa partir em uma aventura para recuperar
+                            suas
                             memórias e derrotar todo o mal causado por Calamity Ganon."</li>
                         <li><b>Data de lançamento:</b> 2017</li>
                         <li><b>Nota dos críticos:</b> 9.7</li>
@@ -100,16 +143,14 @@
                         <li><b>Remaster/Remake:</b> False</li>
                         <li><b>Sequência:</b> False</li>
                     </ul>
-                </div>
-            </section>
-
-        </article>
-    </main>
-
+                </section> -->
+            </article>
+        </main>
+    </div>
     <footer>
-        <h3 id="foot-by">By: Lucas Tavares</h3>
-        <img class="triforce" id="tri-bot" src="./assets/triforce.gif" alt="triforce gif">
-        <a target="_blank" id="foot-git" href="https://github.com/Carrarinii"><b>GitHub</b></a>
+        <h3>By: Lucas Tavares</h3>
+        <img class="triforce" src="./assets/triforce.gif" alt="triforce gif">
+        <a target="_blank" href="https://github.com/Carrarinii"><b>GitHub</b></a>
     </footer>
 
 </body>

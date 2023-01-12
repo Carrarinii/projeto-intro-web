@@ -280,13 +280,13 @@ Tem remaster ou remake? ${remasterOrRemake1}
 
 //2. [V] Ainda no relatório, altere-o para que ele seja criado utilizando laços. Ou seja, você não deve mais imprimir individualmente cada item do relatório. Cada item deve ser exibido a partir de uma iteração do laço. Para testar, adicione mais um item ao array de objetos, e verifique se ele é exibido corretamente.
 
-/*
+
 console.log("----------------------------------------")
 for (let i in jogo1) {
     console.log(`${i}: ${jogo1[i]}`)
 }
 console.log("----------------------------------------")
-*/
+
 
 
 
