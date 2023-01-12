@@ -2,135 +2,301 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Sofia Sans', sans-serif;
 }
 
-header {
-    background-color: rgb(16, 16, 79);
-    /* background-color: rgb(15, 85, 15); */
-    color: white;
-    border-bottom: 3px solid black;
-    min-height: 5vh;
-    text-align: center;
-    padding-top: 3px;
+@font-face {
+    font-family: "Triforce";
+    src: url("./assets/Triforce.ttf") format("truetype");
 }
 
-h1 {
-    position: relative;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+.upperStructure {
+    display: flex;
 }
 
+/*----- ELEMENTOS -----*/
 .triforce {
     height: 2rem;
 }
 
-#tri-left {
-    position: absolute;
-    left: 0;
-    top: 0;
-    margin-left: 35%;
-    margin-top: 0.2%;
+/*-X-*/
+
+
+.upperStructure {
+    display: flex;
 }
 
-#tri-right {
-    position: absolute;
-    right: 0;
-    top: 0;
-    margin-right: 35%;
-    margin-top: 0.2%;
+/*----- HEADER -----*/
+header {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 15vw;
+    min-width: 200px;
+
+    border-right: 6px solid rgb(40, 40, 40);
+    /* border-left: 6px solid rgb(40, 40, 40); */
+
+    background-color: rgb(22, 22, 22);
+    color: white;
+
+    padding: 0.5rem;
 }
 
+
+.headerName {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 0.5rem;
+    /* padding-bottom: 0.5rem; */
+
+    text-decoration: none;
+    color: white;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.2rem;
+    margin: 0.5rem 0;
+    padding: 0.25rem;
+
+    width: 100%;
+    /*--- Melhor usar gap na main ---*/
+    /* margin: 0.5rem; */
+
+    background-color: rgb(40, 40, 40);
+    /* border: 1px solid black; */
+    border-radius: 0.25rem;
+}
+
+.nav>input {
+    /* width: 50%; */
+}
+
+.nav>button {
+    /* padding: 0.25rem; */
+    border-style: none;
+    background-color: darkgray;
+    border-radius: 0.5rem;
+}
+
+.nav>button:hover {
+    background-color: lightgray;
+}
+
+.pathCategories {
+    display: grid;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: 20% 80%;
+    align-items: center;
+    justify-items: start;
+    row-gap: 10px;
+    column-gap: 3px;
+}
+
+.pathCategories>img {
+    justify-self: end;
+    /* background-color: darkgray; */
+}
+
+.pathCategories>a {
+    text-decoration: none;
+
+    color: white;
+    font-size: large;
+}
+
+/*---------------------------------*/
+
+/*----- MAIN -----*/
 main {
-    padding: 1rem 1rem;
-    background-color: gray;
-    background-image: url(./assets/pattern\ -\ Editado.png);
-    background-repeat: repeat;
+    display: flex;
+    flex-direction: column;
+
+    justify-items: center;
+
+    background-color: rgb(7, 7, 7);
+
+    row-gap: 30px;
+    /* padding: 100px 0; */
+
+    /* max-width: 60rem; */
+    min-width: 25rem;
 }
 
-nav {
-    height: 5%;
-    padding: 0.75rem 1rem;
-    margin: 0 30vw;
-    background-color: rgb(182, 182, 182);
-    border: 1px solid black;
-    border-radius: 0.75rem;
+/*---------------------------------------*/
+.displayVideo {
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+
+    border-top: 1px solid black;
+    background-color: black;
+
+    /* max-height: 70vh; */
 }
 
-button {
-    padding: 2px;
+#backgroundVideo {
+    /* width: 100%; */
+    max-height: 80vh;
+    max-width: 100%;
+    /* max-height: 70vh; */
+    /* position: relative; */
+
 }
 
+#newVideo {
+    text-shadow: -1px 0 rgba(0, 0, 0, 0.5), 0 1px rgba(0, 0, 0, 0.5), 1px 0 rgba(0, 0, 0, 0.5), 0 -1px rgba(0, 0, 0, 0.5);
+}
+
+.videoContent {
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.5);
+    /* border: 1px solid red; */
+    color: #f1f1f1;
+    padding: 20px;
+
+    max-height: 100%;
+
+    position: absolute;
+    bottom: 0;
+    /* left: 0; */
+}
+
+/*---------------------------------------*/
+
+/*---------------------------------------*/
+
+main>h1 {
+    /* font-family: 'Triforce',sans-serif; */
+
+    /* border: 1px solid red; */
+
+    color: white;
+    /* color: darkblue; */
+    /* text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white; */
+
+    text-align: center;
+}
+
+/*---------------------------------------*/
+
+/*---------- ARTICLE ----------*/
 article {
-    margin: 0 30vw;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    row-gap: 1rem;
+
+    /* border: 1px solid red; */
+
+    margin: 0 10%;
 }
 
+/*--------------- SECTION ---------------*/
 section {
-    background-color: rgb(182, 182, 182);
-    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 1fr 6fr 3fr;
+
+    /* max-width: 60vw; */
+
+    background-color: rgb(22, 22, 22);
     border-radius: 0.75rem;
-    margin: 1rem 0;
-    padding: 10px;
+    gap: 5px;
+    padding-bottom: 1rem;
+}
+
+h2>a {
+    color: black;
+    text-decoration: none;
+}
+
+section>h2 {
+    grid-column: 1/3;
+    grid-row: 1;
+
+    justify-self: stretch;
+    align-self: end;
+    text-align: center;
+
+    /* border: 1px solid red; */
+
+    font-size: xx-large;
 }
 
 section>img {
-    width: 15rem;
-    border: 1px solid black;
-    border-radius: 0.75rem;
-    padding: 10px;
+    grid-column: 1;
+    grid-row: 2;
+
+    justify-self: end;
+    align-self: start;
+
+    /* border: 1px solid red; */
+    border-radius: 1rem;
+
+    /* padding: 5px; */
 }
 
-/*Imagens*/
-#OOT {
-    background-color: rgb(49, 115, 49);
-    background-image: radial-gradient(rgba(255, 170, 0, 0.659) 10%, rgba(217, 149, 13, 0.659) 30%, transparent 80%);
+section>ul {
+    grid-column: 2;
+    grid-row: 2/4;
+
+    /* border: 1px solid red; */
+    /* padding-left: 5px; */
+    margin-right: 50px;
+    /* padding-bottom: 20px; */
 }
 
-#MM {
-    background-color: rgb(81, 48, 113);
-    background-image: radial-gradient(rgba(0, 0, 0, 0.893) 15%, rgba(128, 0, 128, 0.687) 50%, transparent 80%);
-}
-
-#BOTW {
-    background-color: rgb(33, 33, 94);
-    background-image: radial-gradient(rgba(0, 0, 0, 0.342) 40%, transparent, transparent);
-}
-
-.game-info {
-    display: inline;
-    right: 0;
-    max-width: 20rem;
-}
-
-h2 {
-    color: black;
-}
 
 ul {
     list-style-type: none;
 }
 
+/*--------------- SECTION ----------*/
+/*---------- ARTICLE ----------*/
+/*----- MAIN -----*/
+
+/*----- FOOTER -----*/
 footer {
-    display: block;
+    display: grid;
+    grid-template-columns: 8fr 1fr 8fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+
+    /* justify-content: center; */
+    /* align-items: center; */
+
+    padding: 0.5rem;
+    /* text-align: center; */
+
+    /*--- CENTRALIZAR TRIFORCE E ELEMENTOS SE DISTRIBUIREM A PARTIR DELA ---*/
+    /*--- Fiz com grid e distribui em 3 colunas de 1fr ----*/
+
     background-color: black;
     color: white;
-    padding: 1rem;
-    text-align: center;
-    position: relative;
 }
 
-#foot-by {
-    display: inline;
-    padding-right: 25px;
+footer>h3 {
+    justify-self: end;
 }
 
-#tri-bot {
-    position: absolute;
-    bottom: 0;
-    margin: 0 0 0.7% -1.7%;
-}
+footer>a {
+    justify-self: start;
+    text-decoration: none;
 
-#foot-git {
-    display: inline;
     color: white;
     font-size: large;
-    padding-left: 25px;
 }
+
+/*----- FOOTER -----*/
