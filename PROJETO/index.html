@@ -12,147 +12,109 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
 </head>
 
 <body>
-    <div class="upperStructure">
-        <header>
-
-            <div class="headerName">
+    <div class="mainStructure">
+        <div class="upperStructure">
+            <header>
                 <a class="headerName" href="./index.html">
                     <img src="./assets/TLOZ Games/Displays/Main display 2.png" width="150rem" alt="">
                     <h1>Zeldiary</h1>
                 </a>
-            </div>
+                <nav class="nav">
+                    <input type="search" id="campoPesquisa" placeholder="Pesquisar...">
+                    <button type="submit" id="botaoPesquisa" onclick="puxarInput()"
+                        style='font-size:20px;'>&#128269;</button>
+                </nav>
+                <div class="pathCategories">
 
-            <nav class="nav">
-                <!-- <label for="field">Pesquisar:</label> -->
-                <input type="search" id="field" placeholder="Pesquisar">
-                <button type="submit" style='font-size:20px;'>&#128269;</button>
-            </nav>
+                    <img id="MGd" src="./assets/TLOZ Games/Displays/Items display white.png" width="20rem" alt="">
+                    <h4 class="navItens" id="Todos os Jogos" onclick="encaminharNav()">Todos os Jogos</h4>
 
-            <div class="pathCategories">
+                    <img id="MGd" src="./assets/TLOZ Games/Displays/Items display white.png" width="20rem" alt="">
+                    <h4 class="navItens" id="Jogos Principais" onclick="encaminharNav()">Jogos Principais</h4>
 
+                    <img id="SGd" src="./assets/TLOZ Games/Displays/Items display white.png" width="20rem" alt="">
+                    <h4 class="navItens" id="Jogos Secundários" onclick="encaminharNav()">Jogos Secundários</h4>
 
-                <img id="MGd" src="./assets/TLOZ Games/Displays/Items display white.png" width="20rem" alt="">
-                <a href="">Main Games</a>
-                <img id="SGd" src="./assets/TLOZ Games/Displays/Items display white.png" width="20rem" alt="">
-                <a href="">Sub Games</a>
-                <img id="TLd" src="./assets/TLOZ Games/Displays/Items display white.png" width="20rem" alt="">
-                <a href="">Timeline</a>
-                <img id="Bd" src="./assets/TLOZ Games/Displays/Items display white.png" width="20rem" alt="">
-                <a href="">Bosses</a>
-                <img id="Cd" src="./assets/TLOZ Games/Displays/Items display white.png" width="20rem" alt="">
-                <a href="">Characters</a>
-                <img id="Dd" src="./assets/TLOZ Games/Displays/Items display white.png" width="20rem" alt="">
-                <a href="">Dungeons</a>
-                <img id="Ed" src="./assets/TLOZ Games/Displays/Items display white.png" width="20rem" alt="">
-                <a href="">Enemies</a>
-                <img id="Id" src="./assets/TLOZ Games/Displays/Items display white.png" width="20rem" alt="">
-                <a href="">Items</a>
-                <img id="Ld" src="./assets/TLOZ Games/Displays/Items display white.png" width="20rem" alt="">
-                <a href="">Locations</a>
-            </div>
+                    <img id="TLd" src="./assets/TLOZ Games/Displays/Items display white.png" width="20rem" alt="">
+                    <h4 class="navItens" id="Linha do Tempo" onclick="encaminharNav()">Linha do Tempo</h4>
 
-        </header>
+                    <img id="Bd" src="./assets/TLOZ Games/Displays/Items display white.png" width="20rem" alt="">
+                    <h4 class="navItens" id="Bosses" onclick="encaminharNav()">Bosses</h4>
 
-        <main>
-            <div class="displayVideo">
-                <aside>
-                    <video autoplay muted loop id="backgroundVideo"
-                        src="./assets/TLOZ Games/Videos/TLOZ TOTK - Teaser -  (1080p60).mp4"></video>
-                    <div class="videoContent">
-                        <p id="newVideo" style="color: violet;"><b>new!</b></p>
-                        <h1>The Legend of Zelda: Tears of the Kingdom</h1>
-                        <p>2023</p>
-                        <p>Nintendo Switch</p>
+                    <img id="Cd" src="./assets/TLOZ Games/Displays/Items display white.png" width="20rem" alt="">
+                    <h4 class="navItens" id="Personagens" onclick="encaminharNav()">Personagens</h4>
+
+                    <img id="Dd" src="./assets/TLOZ Games/Displays/Items display white.png" width="20rem" alt="">
+                    <h4 class="navItens" id="Dungeons" onclick="encaminharNav()">Dungeons</h4>
+
+                    <img id="Ed" src="./assets/TLOZ Games/Displays/Items display white.png" width="20rem" alt="">
+                    <h4 class="navItens" id="Inimigos" onclick="encaminharNav()">Inimigos</h4>
+
+                    <img id="Id" src="./assets/TLOZ Games/Displays/Items display white.png" width="20rem" alt="">
+                    <h4 class="navItens" id="Itens" onclick="encaminharNav()">Itens</h4>
+
+                    <img id="Ld" src="./assets/TLOZ Games/Displays/Items display white.png" width="20rem" alt="">
+                    <h4 class="navItens" id="Lugares" onclick="encaminharNav()">Lugares</h4>
+                </div>
+            </header>
+
+            <main>
+                <div id="displayVideo" class="displayVideo">
+                    <aside>
+                        <video autoplay muted loop id="backgroundVideo"
+                            src="./assets/TLOZ Games/Videos/TLOZ TOTK - Teaser -  (1080p60).mp4"></video>
+                        <div class="videoContent">
+                            <p id="newVideo" style="color: violet;"><b>novo!</b></p>
+                            <h1><a href="">The Legend of Zelda: Tears of the Kingdom</a></h1>
+                            <p>2023</p>
+                            <p>Nintendo Switch</p>
+                        </div>
+                    </aside>
+                </div>
+                <h1 class="tituloDisplay" id="tituloDisplay">Novidades!</h1>
+                <article class="areaDisplay" id="areaDisplay">
+                    <!-- Area para os itens da pesquisa -->
+                    <div class="news news-tweet">
+                        <blockquote class="twitter-tweet">
+                            <p lang="en" dir="1tr">The Legend of <a
+                                    href="https://twitter.com/hashtag/Zelda?src=hash&amp;ref_src=twsrc%5Etfw">#Zelda</a>:
+                                Tears of the Kingdom wins the Most Anticipated Game at <a
+                                    href="https://twitter.com/hashtag/TheGameAwards?src=hash&amp;ref_src=twsrc%5Etfw">#TheGameAwards</a>!<br><br>Please
+                                look forward to more details before its release on 5/12/23! <a
+                                    href="https://t.co/x415axZgOY">pic.twitter.com/x415axZgOY</a></p>&mdash; Nintendo of
+                            America (@NintendoAmerica) <a
+                                href="https://twitter.com/NintendoAmerica/status/1601047290185121793?ref_src=twsrc%5Etfw">December
+                                9, 2022</a>
+                        </blockquote>
                     </div>
-                </aside>
-            </div>
-            <h1>MAIN GAMES</h1>
-            <article>
-                <section>
-                    <h2><a target="_blank" href="./oot.html">Ocarina of Time</a></h2>
-                    <img src="./assets/TLOZ Games/Polished Logos/OOT.png" width="90%"
-                        alt="The Legend of Zelda: Ocarina of Time logo">
-                    <ul>
-                        <li> <b>Gênero:</b>
-                            Ação e Aventura, Fantasia, Quebra-cabeça</li>
-                        <li><b>Sinopse:</b>
-                            "Link é um jovem da floresta que vê seu lar em perigo e parte em uma jornada para deter um
-                            rei maligno e salvar o reino de Hyrule! Para completar sua missão, ele terá que encontrar a
-                            princesa Zelda e ajudar outros povos para conseguir reunir os pedaços da Triforce e
-                            restabelecer o equilíbrio do mundo!"</li>
-                        <li><b>Data de lançamento:</b>
-                            1998</li>
-                        <li><b>Nota dos críticos:</b>
-                            9.9</li>
-                        <li><b>Nota do público:</b>
-                            9.1</li>
-                        <li><b>Plataformas:</b>
-                            N64, 3DS</li>
-                        <li><b>Tradução:</b>
-                            False</li>
-                        <li><b>Remaster/Remake:</b>
-                            True</li>
-                        <li><b>Sequência:</b>
-                            False</li>
-                    </ul>
-                </section>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-                <!-- <section>
-                    <h2><a target="_blank"
-                            href="https://zeldapedia.wiki/wiki/The_Legend_of_Zelda:_Majora%27s_Mask">Majora's
-                            Mask</a></h2>
-                    <img src="./assets/TLOZ Games/Polished Logos/Logo padrao.png" alt="">
-                    <ul>
-                        <li><b>Gênero:</b> Fantasia, Quebra-cabeça</li>
-                        <li><b>Sinopse:</b> "Jogado em um mundo paralelo, Link encontra uma terra em grave perigo. A
-                            misteriosa
-                            Máscara de Majora causou estragos nos cidadãos da cidade de Termina, mas seu problema
-                            mais
-                            urgente é a lua caindo em direção ao mundo! Link tem apenas 3 dias, apenas 72 horas,
-                            para
-                            encontrar uma maneira de parar sua queda."</li>
-                        <li><b>Data de lançamento:</b> 2000</li>
-                        <li><b>Nota dos críticos:</b> 9.5</li>
-                        <li><b>Nota do público:</b> 9.1</li>
-                        <li><b>Plataformas:</b> N64, 3DS</li>
-                        <li><b>Tradução:</b> False</li>
-                        <li><b>Remaster/Remake:</b> True</li>
-                        <li><b>Sequência:</b> True</li>
-                    </ul>
-                </section> -->
-                <!-- <section>
-                    <h2><a target="_blank"
-                            href="https://zeldapedia.wiki/wiki/The_Legend_of_Zelda:_Breath_of_the_Wild">Breath of
-                            the
-                            Wild</a></h2>
-                    <ul>
-                        <li><b>Gênero:</b> Ação e Aventura, Mundo Aberto, RPG</li>
-                        <li><b>Sinopse:</b> "A história começa com Link, que ao acordar, se encontra perdido em uma
-                            Hyrule
-                            devastada. Após cem anos de sono, Link precisa partir em uma aventura para recuperar
-                            suas
-                            memórias e derrotar todo o mal causado por Calamity Ganon."</li>
-                        <li><b>Data de lançamento:</b> 2017</li>
-                        <li><b>Nota dos críticos:</b> 9.7</li>
-                        <li><b>Nota do público:</b> 8.7</li>
-                        <li><b>Plataformas:</b> Wii U, Nintendo Switch</li>
-                        <li><b>Tradução:</b> False</li>
-                        <li><b>Remaster/Remake:</b> False</li>
-                        <li><b>Sequência:</b> False</li>
-                    </ul>
-                </section> -->
-            </article>
-        </main>
+                    <iframe class="news" width="560" height="315" src="https://www.youtube.com/embed/2SNF4M_v7wc"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+
+                </article>
+            </main>
+        </div>
+        <footer>
+            <h3>By: Lucas Tavares</h3>
+            <a target="_blank" href="https://github.com/Carrarinii"><b><img class="socialLogo"
+                        src="./assets/TLOZ Games/Social Logos/Github.png" alt="Github logo" height="50px"></b></a>
+            <a target="_blank" href="twitter.com"><img class="socialLogo"
+                    src="./assets/TLOZ Games/Social Logos/Twitter.png" alt="Twitter logo" height="50px"></a>
+            <a target="_blank" href="linkedin.com"><img class="socialLogo"
+                    src="./assets/TLOZ Games/Social Logos/Linkedin.png" alt="Linkedin logo" height="50px"></a>
+            <a target="_blank" href="telegram.com"><img class="socialLogo"
+                    src="./assets/TLOZ Games/Social Logos/Telegram.png" alt="Telegram logo" height="50px"></a>
+            <a target="_blank" href="youtube.com"><img class="socialLogo"
+                    src="./assets/TLOZ Games/Social Logos/Youtube.png" alt="Youtube logo" height="50px"></a>
+        </footer>
     </div>
-    <footer>
-        <h3>By: Lucas Tavares</h3>
-        <img class="triforce" src="./assets/triforce.gif" alt="triforce gif">
-        <a target="_blank" href="https://github.com/Carrarinii"><b>GitHub</b></a>
-    </footer>
-
 </body>
 
 </html>
